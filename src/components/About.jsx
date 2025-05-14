@@ -1,9 +1,9 @@
 const About = () => (
-  <section id="about" className="py-16 px-6 md:px-10 bg-gradient-to-br from-gray-50 to-white">
+  <section id="about" className="py-16 px-4 md:px-10 bg-gradient-to-br from-gray-50 to-white">
     <div className="max-w-4xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800 relative">
         About Me
-        <span className="absolute top-12 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
+        <span className="absolute hover:animate-pulse top-12 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
       </h2>
       
       <div className="grid md:grid-cols-2 gap-8 items-center">

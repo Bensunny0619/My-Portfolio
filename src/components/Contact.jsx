@@ -1,14 +1,16 @@
 const Contact = () => (
-  <section id="contact" className="p-10 bg-gray-50 rounded-lg">
+  <section id="contact" className="p-10 px-4 bg-gray-50 rounded-lg">
     <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800 relative">
         Get in Touch
-        <span className="absolute top-12 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
+        <span className="absolute hover:animate-pulse top-12 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
       </h2>
-    <div className="max-w-md mx-auto space-y-4">
+    <div className="max-w-md mx-auto text-center space-y-4">
       <p className="text-lg">
         📧 <strong>Email:</strong>{" "}
-        <a 
-          href="mailto:odudarege0619@gmail.com" 
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=odudarege0619@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
           odudarege0619@gmail.com

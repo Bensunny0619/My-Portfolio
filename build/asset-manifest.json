@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d93cb4f.css",
+    "main.js": "/static/js/main.f343b6f6.js",
+    "static/media/da3.png": "/static/media/da3.fad7e4d0632ffe841069.png",
+    "static/media/da2.png": "/static/media/da2.8c8b81aae89bf8cefacf.png",
+    "static/media/da1.png": "/static/media/da1.61f13c8a8d621daf8065.png",
+    "static/media/pd3.png": "/static/media/pd3.0e528b6b70c693dbe8c3.png",
+    "static/media/web.png": "/static/media/web.2b68ed90458cbb265d92.png",
+    "static/media/pdfannote.png": "/static/media/pdfannote.cb111a812926e9b083e3.png",
+    "static/media/pd4.png": "/static/media/pd4.49dd2b7c852287e4edc0.png",
+    "static/media/pd1.png": "/static/media/pd1.f84fe69971cedf6293ce.png",
+    "static/media/bloom-home.jpg": "/static/media/bloom-home.8a04a43174d734ce0263.jpg",
+    "static/media/howfar get-started.jpg": "/static/media/howfar get-started.25e59e046a3d0cc934da.jpg",
+    "static/media/bloom workspace.jpg": "/static/media/bloom workspace.f8339675fb9e8f8e8d92.jpg",
+    "static/media/xchange pricelist.jpg": "/static/media/xchange pricelist.ad85a4ca54a3a5dfe1f2.jpg",
+    "static/media/xchange wallet.jpg": "/static/media/xchange wallet.8569ebb3ad7db3118dd5.jpg",
+    "static/media/da6.png": "/static/media/da6.682b854db80946d52be0.png",
+    "static/media/da5.png": "/static/media/da5.abe800f53ba0071fbfde.png",
+    "static/media/pd2.png": "/static/media/pd2.8b2e3405bdfb3bf0e868.png",
+    "static/media/howfar main.jpg": "/static/media/howfar main.ab365f3438fa3084341d.jpg",
+    "static/media/da7.png": "/static/media/da7.72bcd94594cd5d8ba56f.png",
+    "static/media/xchange trade.jpg": "/static/media/xchange trade.8e7e8f59981b5d8e7156.jpg",
+    "static/media/xchange login.jpg": "/static/media/xchange login.a77f4193b7e09be9b6cf.jpg",
+    "static/media/bloom get-started.jpg": "/static/media/bloom get-started.75a73111247407ef7554.jpg",
+    "static/media/xchange setting.jpg": "/static/media/xchange setting.6688a241913c16c7e584.jpg",
+    "static/media/da4.png": "/static/media/da4.6060edee90f3039a9f13.png",
+    "index.html": "/index.html",
+    "main.2d93cb4f.css.map": "/static/css/main.2d93cb4f.css.map",
+    "main.f343b6f6.js.map": "/static/js/main.f343b6f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d93cb4f.css",
+    "static/js/main.f343b6f6.js"
+  ]
+}
