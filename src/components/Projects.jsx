@@ -192,7 +192,7 @@ const Projects = () => (
           link="https://pdf-annotation-app-updated.vercel.app/"
           images={[pdfToolImg, pd1, pd2, pd3, pd4]}
           problems={["Enables efficient document collaboration and review", "Replaces need for paid PDF tools"]}
-          challenges={["Rendering large PDFs smoothly", "Preserving annotations during export"]}
+          challenges={["Rendering large PDFs smoothly", "Preserving annotations during export", "Signature Positioning and multi page support"]}
         />
 
         <ProjectCard
