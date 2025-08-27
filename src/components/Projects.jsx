@@ -25,13 +25,20 @@ import xchangeImg3 from '../assets/projects/xchange pricelist.jpg';
 import xchangeImg4 from '../assets/projects/xchange trade.jpg';
 import xchangeImg5 from '../assets/projects/xchange wallet.jpg';
 import xchangeImg6 from '../assets/projects/xchange setting.jpg'
+import { motion } from 'framer-motion';
 
 
 const ProjectCard = ({ title, description, features, tech, link, images, problems, challenges }) => {
   const [zoomImg, setZoomImg] = useState(null);
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-blue-100 relative">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700 hover:border-blue-100 relative"
+    >
       {zoomImg && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
@@ -47,17 +54,17 @@ const ProjectCard = ({ title, description, features, tech, link, images, problem
 
       <div className="flex flex-col h-full">
         <div className="flex-grow">
-          <h3 className="text-2xl font-bold text-gray-800 mb-3">{title}</h3>
-          <p className="text-gray-600 mb-4">{description}</p>
+          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">{title}</h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
 
           {features && (
             <div className="mb-4">
-              <h4 className="text-sm font-semibold text-gray-700 mb-2">KEY FEATURES</h4>
+              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">KEY FEATURES</h4>
               <ul className="space-y-1">
                 {features.map((f, i) => (
                   <li key={i} className="flex items-start">
                     <span className="text-blue-500 mr-2">•</span>
-                    <span className="text-gray-700">{f}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{f}</span>
                   </li>
                 ))}
               </ul>
@@ -66,12 +73,12 @@ const ProjectCard = ({ title, description, features, tech, link, images, problem
 
           {tech && (
             <div className="mb-4">
-              <h4 className="text-sm font-semibold text-gray-700 mb-2">TECH STACK</h4>
+              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">TECH STACK</h4>
               <div className="flex flex-wrap gap-2">
                 {tech.split(', ').map((t, i) => (
                   <span 
                     key={i}
-                    className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium"
+                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-xs font-medium"
                   >
                     {t}
                   </span>
@@ -82,12 +89,12 @@ const ProjectCard = ({ title, description, features, tech, link, images, problem
 
           {problems && (
             <div className="mb-4">
-              <h4 className="text-sm font-semibold text-gray-700 mb-2">PROBLEMS SOLVED</h4>
+              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">PROBLEMS SOLVED</h4>
               <ul className="space-y-1">
                 {problems.map((p, i) => (
                   <li key={i} className="flex items-start">
                     <span className="text-green-500 mr-2">✔</span>
-                    <span className="text-gray-700">{p}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{p}</span>
                   </li>
                 ))}
               </ul>
@@ -96,12 +103,12 @@ const ProjectCard = ({ title, description, features, tech, link, images, problem
 
           {challenges && (
             <div className="mb-4">
-              <h4 className="text-sm font-semibold text-gray-700 mb-2">CHALLENGES FACED</h4>
+              <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">CHALLENGES FACED</h4>
               <ul className="space-y-1">
                 {challenges.map((c, i) => (
                   <li key={i} className="flex items-start">
                     <span className="text-red-500 mr-2">⚠</span>
-                    <span className="text-gray-700">{c}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{c}</span>
                   </li>
                 ))}
               </ul>
@@ -114,7 +121,7 @@ const ProjectCard = ({ title, description, features, tech, link, images, problem
             href={link} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors"
+            className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-400 font-medium transition-colors"
           >
             View Project
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -129,7 +136,7 @@ const ProjectCard = ({ title, description, features, tech, link, images, problem
               {images.map((img, i) => (
                 <div 
                   key={i}
-                  className="relative group overflow-hidden rounded-lg aspect-video bg-gray-100 cursor-pointer"
+                  className="relative group overflow-hidden rounded-lg aspect-video bg-gray-100 dark:bg-gray-700 cursor-pointer"
                   onClick={() => setZoomImg(img)}
                   title="Click to enlarge"
                 >
@@ -145,23 +152,40 @@ const ProjectCard = ({ title, description, features, tech, link, images, problem
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 const Projects = () => (
-  <section id="projects" className="py-16 px-4 md:px-10 bg-gradient-to-b from-gray-50 to-white">
+  <section 
+    id="projects" 
+    className="py-16 px-4 md:px-10 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-300"
+  >
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3 relative">My Projects
+        <motion.h2 
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-3 relative"
+        >
+          My Projects
           <span className="absolute hover:animate-pulse top-12 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
-        </h2>
-        <p className="text-gray-600 max-w-2xl my-8 mx-auto">
+        </motion.h2>
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-gray-600 dark:text-gray-300 max-w-2xl my-8 mx-auto"
+        >
           Here are some of my recent works. Each project was built with different technologies to solve unique challenges.
-        </p>
+        </motion.p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8">
+        {/* === Existing Projects === */}
         <ProjectCard
           title="How Far"
           description="A React Native app that tracks user movement using device sensors with real-time analytics."
@@ -215,6 +239,30 @@ const Projects = () => (
           images={[rmpw1, rmpw2, rmpw5, rmpw6, rmpw7]}
           problems={["Delivers fast and accessible web experience", "Boosts user engagement with responsive design"]}
           challenges={["Ensuring consistent layout across screen sizes", "Balancing SEO with aesthetic design"]}
+        />
+
+        {/* === New Project === */}
+        <ProjectCard
+          title="Client Application Portal"
+          description="A modern web application for managing client application processes, built with Next.js, Supabase, React, and TypeScript."
+          features={[
+            "User authentication & role-based access",
+            "CRUD for client applications",
+            "Dashboard with summaries & progress indicators",
+            "Realtime updates via Supabase",
+            "Responsive design"
+          ]}
+          tech="Next.js, React, TypeScript, Supabase, PostgreSQL, Node.js, Git, Netlify"
+          link="https://client-application.netlify.app/"
+          problems={[
+            "Streamlines client application management",
+            "Provides real-time progress tracking",
+            "Centralizes client data with secure authentication"
+          ]}
+          challenges={[
+            "Managing application state & filtering by status",
+            "Handling conditional form inputs & optional fields"
+          ]}
         />
       </div>
     </div>
