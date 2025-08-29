@@ -9,7 +9,7 @@ const Hero = () => (
       transition={{ duration: 0.7 }}
       className="text-4xl font-bold text-gray-900 dark:text-gray-100"
     >
-      Hi, I'm Gbenga Odudare Emmanuel
+      Hi, I'm Gbenga Emmanuel Odudare
     </motion.h1>
 
     <motion.p 

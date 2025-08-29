@@ -24,7 +24,16 @@ import xchangeImg2 from '../assets/projects/xchange login.jpg';
 import xchangeImg3 from '../assets/projects/xchange pricelist.jpg';
 import xchangeImg4 from '../assets/projects/xchange trade.jpg';
 import xchangeImg5 from '../assets/projects/xchange wallet.jpg';
-import xchangeImg6 from '../assets/projects/xchange setting.jpg'
+import xchangeImg6 from '../assets/projects/xchange setting.jpg';
+import ca1 from '../assets/projects/CA-home.png';
+import ca2 from '../assets/projects/CA-app.png';
+import ca3 from '../assets/projects/CA-app2.png';
+import ca4 from '../assets/projects/CA-login.png';
+import ca5 from '../assets/projects/CA-signup.png';
+import ca6 from '../assets/projects/CA-report.png';
+import ca7 from '../assets/projects/CA-report2.png';
+import ca8 from '../assets/projects/CA-form.png';
+
 import { motion } from 'framer-motion';
 
 
@@ -241,7 +250,6 @@ const Projects = () => (
           challenges={["Ensuring consistent layout across screen sizes", "Balancing SEO with aesthetic design"]}
         />
 
-        {/* === New Project === */}
         <ProjectCard
           title="Client Application Portal"
           description="A modern web application for managing client application processes, built with Next.js, Supabase, React, and TypeScript."
@@ -254,6 +262,7 @@ const Projects = () => (
           ]}
           tech="Next.js, React, TypeScript, Supabase, PostgreSQL, Node.js, Git, Netlify"
           link="https://client-application.netlify.app/"
+          images={[ca1, ca2, ca3, ca4, ca5, ca6, ca7, ca8 ]}
           problems={[
             "Streamlines client application management",
             "Provides real-time progress tracking",

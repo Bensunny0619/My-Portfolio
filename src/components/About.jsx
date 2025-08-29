@@ -45,16 +45,77 @@ const About = () => (
           transition={{ duration: 0.7 }}
           className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-600 transition-colors duration-300"
         >
-          <h3 className="text-xl text-center font-semibold mb-4 text-gray-800 dark:text-gray-100">My Toolkit</h3>
-          <div className="flex flex-wrap gap-3">
-            {['React', 'React Native', 'JavaScript', 'TypeScript', 'Html', 'Bootstrap', 'Tailwind CSS', 'Next.js', 'Node.js', 'Git'].map((skill) => (
-              <span 
-                key={skill}
-                className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
-              >
-                {skill}
-              </span>
-            ))}
+          <h3 className="text-xl text-center font-semibold mb-4 text-gray-800 dark:text-gray-100">Technical Expertise</h3>
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Languages</h4>
+              <div className="flex flex-wrap gap-2">
+                {['JavaScript', 'TypeScript', 'HTML5', 'CSS3'].map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Frameworks</h4>
+              <div className="flex flex-wrap gap-2">
+                {['React', 'React Native', 'Next.js', 'Node.js', 'Express.js'].map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Databases</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Supabase', 'Firebase', 'MongoDB', 'PostgreSQL'].map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Styling</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Tailwind CSS', 'Bootstrap'].map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Tools & Platforms</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Git', 'Expo', 'Vercel', 'Netlify'].map((skill) => (
+                  <span 
+                    key={skill}
+                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
