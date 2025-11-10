@@ -33,6 +33,14 @@ import ca5 from '../assets/projects/CA-signup.png';
 import ca6 from '../assets/projects/CA-report.png';
 import ca7 from '../assets/projects/CA-report2.png';
 import ca8 from '../assets/projects/CA-form.png';
+import laravel1 from '../assets/projects/laravel1.png';
+import laravel2 from '../assets/projects/laravel2.png';
+import laravel3 from '../assets/projects/laravel3.png';
+import laravel4 from '../assets/projects/laravel4.png';
+import laravel5 from '../assets/projects/laravel5.png';
+import laravel6 from '../assets/projects/laravel6.png';
+import laravel7 from '../assets/projects/laravel7.png';
+import laravel8 from '../assets/projects/laravel8.png';
 
 import { motion } from 'framer-motion';
 
@@ -194,7 +202,29 @@ const Projects = () => (
       </div>
 
       <div className="grid md:grid-cols-2 gap-8">
-        {/* === Existing Projects === */}
+        <ProjectCard
+  title="Laravel Blog Platform"
+  description="A full-featured blog application built from the ground up with the Laravel framework, featuring user authentication, post management, and more."
+  features={[
+    "Secure user registration and login",
+    "CRUD functionality for blog posts",
+    "Rich text editor for creating content",
+    "Post categories and tagging system",
+  ]}
+  tech="Laravel, PHP, MySQL, Tailwind, JavaScript"
+  link="https://github.com/Bensunny0619/Laravel-Blog"
+  images={[laravel1, laravel2, laravel3, laravel4, laravel5, laravel6, laravel7, laravel8]} // Use the images you imported
+  problems={[
+    "Demonstrates ability to build a complete backend application.",
+    "Provides a scalable and maintainable structure for a content management system.",
+  ]}
+  challenges={[
+    "Implementing secure authentication and authorization.",
+    "Designing a relational database schema for posts, users, and categories.",
+  ]}
+/>
+
+
         <ProjectCard
           title="How Far"
           description="A React Native app that tracks user movement using device sensors with real-time analytics."

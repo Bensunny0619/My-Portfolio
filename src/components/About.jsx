@@ -17,7 +17,7 @@ const About = () => (
         <span className="absolute hover:animate-pulse top-12 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
       </motion.h2>
       
-      <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
@@ -27,13 +27,13 @@ const About = () => (
           className="space-y-6"
         >
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            I'm a passionate <span className="font-semibold text-blue-600">frontend developer</span> with experience building responsive and user-friendly interfaces using modern technologies. I specialize in <span className="font-semibold">React</span> for web development and <span className="font-semibold">React Native</span> for cross-platform mobile apps.
+            As a <span className="font-semibold text-blue-600">Full-Stack Developer</span>, I build seamless digital experiences from concept to deployment. My passion lies in creating applications that are not only functional and robust but also intuitive and enjoyable for the end-user.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            I enjoy turning complex problems into simple, beautiful, and intuitive designs. Whether it's developing clean UIs with <span className="font-semibold">Tailwind CSS</span> or building scalable app components in React Native, I focus on writing maintainable code and delivering high-quality user experiences.
+            My expertise spans both the frontend and backend. I use modern technologies like <span className="font-semibold">React</span> and <span className="font-semibold">React Native</span> to build dynamic user interfaces, while leveraging backend frameworks such as <span className="font-semibold">Node.js/Express</span> and <span className="font-semibold">PHP/Laravel</span> to create powerful server-side logic and APIs.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            I'm always eager to learn new technologies and collaborate on exciting projects that make an impact.
+            Beyond development, I have a keen interest in ensuring application quality and reliability through automated testing. I use tools like <span className="font-semibold">Puppeteer</span> to automate browser tasks and validate functionality, ensuring a polished final product.
           </p>
         </motion.div>
         
@@ -50,11 +50,8 @@ const About = () => (
             <div>
               <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Languages</h4>
               <div className="flex flex-wrap gap-2">
-                {['JavaScript', 'TypeScript', 'HTML5', 'CSS3'].map((skill) => (
-                  <span 
-                    key={skill}
-                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
-                  >
+                {['JavaScript', 'TypeScript', 'PHP', 'SQL', 'HTML5', 'CSS3'].map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
                 ))}
@@ -62,13 +59,21 @@ const About = () => (
             </div>
             
             <div>
-              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Frameworks</h4>
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Frontend</h4>
               <div className="flex flex-wrap gap-2">
-                {['React', 'React Native', 'Next.js', 'Node.js', 'Express.js'].map((skill) => (
-                  <span 
-                    key={skill}
-                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
-                  >
+                {['React', 'React Native', 'Next.js', 'Tailwind CSS'].map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Backend</h4>
+              <div className="flex flex-wrap gap-2">
+                {['Node.js', 'Express.js', 'Laravel', 'PHP'].map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
                 ))}
@@ -78,25 +83,8 @@ const About = () => (
             <div>
               <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Databases</h4>
               <div className="flex flex-wrap gap-2">
-                {['Supabase', 'Firebase', 'MongoDB', 'PostgreSQL'].map((skill) => (
-                  <span 
-                    key={skill}
-                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Styling</h4>
-              <div className="flex flex-wrap gap-2">
-                {['Tailwind CSS', 'Bootstrap'].map((skill) => (
-                  <span 
-                    key={skill}
-                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
-                  >
+                {['MySQL', 'MongoDB', 'Supabase', 'Firebase'].map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-yellow-50 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
                 ))}
@@ -106,11 +94,8 @@ const About = () => (
             <div>
               <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Tools & Platforms</h4>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'Expo', 'Vercel', 'Netlify'].map((skill) => (
-                  <span 
-                    key={skill}
-                    className="px-3 py-1 bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
-                  >
+                {['Git', 'Puppeteer', 'Expo', 'Vercel', 'Netlify'].map((skill) => (
+                  <span key={skill} className="px-3 py-1 bg-purple-50 dark:bg-purple-900 text-purple-700 dark:text-purple-200 rounded-full text-sm font-medium">
                     {skill}
                   </span>
                 ))}
