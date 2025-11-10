@@ -41,6 +41,11 @@ import laravel5 from '../assets/projects/laravel5.png';
 import laravel6 from '../assets/projects/laravel6.png';
 import laravel7 from '../assets/projects/laravel7.png';
 import laravel8 from '../assets/projects/laravel8.png';
+import quizAppImg from '../assets/projects/qa1.jpg';
+import quizAppImg2 from '../assets/projects/qa2.jpg';
+import quizAppImg3 from '../assets/projects/qa3.jpg';
+import quizAppImg4 from '../assets/projects/qa4.jpg';
+import quizAppImg5 from '../assets/projects/qa5.jpg';
 
 import { motion } from 'framer-motion';
 
@@ -303,6 +308,29 @@ const Projects = () => (
             "Handling conditional form inputs & optional fields"
           ]}
         />
+
+
+        <ProjectCard
+  title="React Native Quiz App"
+  description="A sleek and engaging mobile quiz application built with React Native and Expo, offering a modern user experience with timed questions and instant feedback."
+  features={[
+    "Multiple quiz categories",
+    "30-second timer for each question",
+    "Instant feedback with correct answer highlighting",
+    "Detailed summary and review screen",
+  ]}
+  tech="React Native, Expo, TypeScript, JavaScript"
+  link="https://github.com/Bensunny0619/QuizApp"
+  images={[quizAppImg, quizAppImg2, quizAppImg3, quizAppImg4, quizAppImg5]} // Use the image you imported
+  problems={[
+    "Provides an interactive and educational mobile experience.",
+    "Demonstrates strong state management and component-based architecture in React Native.",
+  ]}
+  challenges={[
+    "Managing timers and state across question transitions.",
+    "Ensuring a clean and responsive UI on different screen sizes.",
+  ]}
+/>
       </div>
     </div>
   </section>
