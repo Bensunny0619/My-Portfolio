@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 
-// Import all project images
-
-// --- ADDED IMPORTS FOR NEW PROJECT ---
 import jobin1 from '../assets/projects/j1.png';
 import jobin2 from '../assets/projects/j2.png';
 import jobin3 from '../assets/projects/j3.png';
@@ -13,7 +10,6 @@ import jobin7 from '../assets/projects/j7.png';
 import jobin8 from '../assets/projects/j8.png';
 import jobin9 from '../assets/projects/j9.png';
 import jobin10 from '../assets/projects/j10.png';
-// --- END OF ADDED IMPORTS ---
 
 import howFar1 from '../assets/projects/howfar get-started.jpg';
 import howFar2 from '../assets/projects/howfar main.jpg';
@@ -61,6 +57,12 @@ import quizAppImg2 from '../assets/projects/qa2.jpg';
 import quizAppImg3 from '../assets/projects/qa3.jpg';
 import quizAppImg4 from '../assets/projects/qa4.jpg';
 import quizAppImg5 from '../assets/projects/qa5.jpg';
+
+import todoImg1 from '../assets/projects/td1.jpg'; 
+import todoImg2 from '../assets/projects/td2.jpg';
+import todoImg3 from '../assets/projects/td3.jpg';
+import todoImg4 from '../assets/projects/td4.jpg';
+
 
 import { motion } from 'framer-motion';
 
@@ -371,6 +373,30 @@ const Projects = () => (
             "Ensuring a clean and responsive UI on different screen sizes.",
           ]}
         />
+
+        <ProjectCard
+          title="React Native To-Do App"
+          description="A simple, persistent To-Do mobile application built with React Native and Expo. It allows users to manage tasks with a clean UI, with all data saved locally using AsyncStorage."
+          features={[
+            "Add tasks with title and optional description",
+            "Mark tasks as completed or undo them",
+            "Delete tasks with confirmation",
+            "Persistent storage using AsyncStorage",
+            "Floating action button for quick task creation",
+          ]}
+          tech="React Native, Expo, AsyncStorage, JavaScript"
+          link="https://github.com/Bensunny0619/react-native-todo-app"
+          images={[todoImg1, todoImg2, todoImg3, todoImg4]}
+          problems={[
+            "Provides a simple, persistent way to manage daily tasks on a mobile device.",
+            "Demonstrates local storage implementation in React Native with AsyncStorage.",
+          ]}
+          challenges={[
+            "Managing state for a dynamic list of tasks.",
+            "Ensuring data persistence across app sessions.",
+          ]}
+        />
+
       </div>
     </div>
   </section>
