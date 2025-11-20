@@ -1,5 +1,20 @@
 import React, { useState } from 'react';
+
 // Import all project images
+
+// --- ADDED IMPORTS FOR NEW PROJECT ---
+import jobin1 from '../assets/projects/j1.png';
+import jobin2 from '../assets/projects/j2.png';
+import jobin3 from '../assets/projects/j3.png';
+import jobin4 from '../assets/projects/j4.png';
+import jobin5 from '../assets/projects/j5.png';
+import jobin6 from '../assets/projects/j6.png';
+import jobin7 from '../assets/projects/j7.png';
+import jobin8 from '../assets/projects/j8.png';
+import jobin9 from '../assets/projects/j9.png';
+import jobin10 from '../assets/projects/j10.png';
+// --- END OF ADDED IMPORTS ---
+
 import howFar1 from '../assets/projects/howfar get-started.jpg';
 import howFar2 from '../assets/projects/howfar main.jpg';
 import bloomImg from '../assets/projects/bloom-Img.png';
@@ -207,27 +222,52 @@ const Projects = () => (
       </div>
 
       <div className="grid md:grid-cols-2 gap-8">
+        {/* --- NEW PROJECT ADDED HERE --- */}
         <ProjectCard
-  title="Laravel Blog Platform"
-  description="A full-featured blog application built from the ground up with the Laravel framework, featuring user authentication, post management, and more."
-  features={[
-    "Secure user registration and login",
-    "CRUD functionality for blog posts",
-    "Rich text editor for creating content",
-    "Post categories and tagging system",
-  ]}
-  tech="Laravel, PHP, MySQL, Tailwind, JavaScript"
-  link="https://github.com/Bensunny0619/Laravel-Blog"
-  images={[laravel1, laravel2, laravel3, laravel4, laravel5, laravel6, laravel7, laravel8]} // Use the images you imported
-  problems={[
-    "Demonstrates ability to build a complete backend application.",
-    "Provides a scalable and maintainable structure for a content management system.",
-  ]}
-  challenges={[
-    "Implementing secure authentication and authorization.",
-    "Designing a relational database schema for posts, users, and categories.",
-  ]}
-/>
+          title="JobIn - Job Application Tracker"
+          description="A full-stack web application to streamline the job search process. It replaces messy spreadsheets with an intuitive platform to track applications, discover opportunities, and analyze job fit."
+          features={[
+            "Intuitive Kanban Board & Grid View",
+            "Integrated Online Job Search via external APIs",
+            "AI-Powered Match Analysis against your resume",
+            "Detailed Application Tracking & Data Export to CSV",
+          ]}
+          tech="React, TypeScript, Supabase, Tailwind CSS, Vite, dnd-kit, Vercel"
+          link="https://jobin1.vercel.app/"
+          images={[jobin1, jobin2, jobin3, jobin4, jobin5, jobin6, jobin7, jobin8, jobin9, jobin10]}
+          problems={[
+            "Replaces messy spreadsheets for tracking job applications.",
+            "Centralizes all job-seeking activities into a single dashboard.",
+            "Provides data-driven insights with AI-powered match analysis.",
+          ]}
+          challenges={[
+            "Implementing a performant drag-and-drop Kanban interface.",
+            "Integrating external APIs for a seamless job search experience.",
+            "Developing a serverless function for the AI analysis feature.",
+          ]}
+        />
+
+        <ProjectCard
+          title="Laravel Blog Platform"
+          description="A full-featured blog application built from the ground up with the Laravel framework, featuring user authentication, post management, and more."
+          features={[
+            "Secure user registration and login",
+            "CRUD functionality for blog posts",
+            "Rich text editor for creating content",
+            "Post categories and tagging system",
+          ]}
+          tech="Laravel, PHP, MySQL, Tailwind, JavaScript"
+          link="https://github.com/Bensunny0619/Laravel-Blog"
+          images={[laravel1, laravel2, laravel3, laravel4, laravel5, laravel6, laravel7, laravel8]} // Use the images you imported
+          problems={[
+            "Demonstrates ability to build a complete backend application.",
+            "Provides a scalable and maintainable structure for a content management system.",
+          ]}
+          challenges={[
+            "Implementing secure authentication and authorization.",
+            "Designing a relational database schema for posts, users, and categories.",
+          ]}
+        />
 
 
         <ProjectCard
@@ -311,26 +351,26 @@ const Projects = () => (
 
 
         <ProjectCard
-  title="React Native Quiz App"
-  description="A sleek and engaging mobile quiz application built with React Native and Expo, offering a modern user experience with timed questions and instant feedback."
-  features={[
-    "Multiple quiz categories",
-    "30-second timer for each question",
-    "Instant feedback with correct answer highlighting",
-    "Detailed summary and review screen",
-  ]}
-  tech="React Native, Expo, TypeScript, JavaScript"
-  link="https://github.com/Bensunny0619/QuizApp"
-  images={[quizAppImg, quizAppImg2, quizAppImg3, quizAppImg4, quizAppImg5]} // Use the image you imported
-  problems={[
-    "Provides an interactive and educational mobile experience.",
-    "Demonstrates strong state management and component-based architecture in React Native.",
-  ]}
-  challenges={[
-    "Managing timers and state across question transitions.",
-    "Ensuring a clean and responsive UI on different screen sizes.",
-  ]}
-/>
+          title="React Native Quiz App"
+          description="A sleek and engaging mobile quiz application built with React Native and Expo, offering a modern user experience with timed questions and instant feedback."
+          features={[
+            "Multiple quiz categories",
+            "30-second timer for each question",
+            "Instant feedback with correct answer highlighting",
+            "Detailed summary and review screen",
+          ]}
+          tech="React Native, Expo, TypeScript, JavaScript"
+          link="https://github.com/Bensunny0619/QuizApp"
+          images={[quizAppImg, quizAppImg2, quizAppImg3, quizAppImg4, quizAppImg5]} // Use the image you imported
+          problems={[
+            "Provides an interactive and educational mobile experience.",
+            "Demonstrates strong state management and component-based architecture in React Native.",
+          ]}
+          challenges={[
+            "Managing timers and state across question transitions.",
+            "Ensuring a clean and responsive UI on different screen sizes.",
+          ]}
+        />
       </div>
     </div>
   </section>
