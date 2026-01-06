@@ -33,8 +33,8 @@ const About = () => (
             My expertise spans both the frontend and backend. I use modern technologies like <span className="font-semibold">React</span> and <span className="font-semibold">React Native</span> to build dynamic user interfaces, while leveraging backend frameworks such as <span className="font-semibold">Node.js/Express</span> and <span className="font-semibold">PHP/Laravel</span> to create powerful server-side logic and APIs.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            Beyond development, I have a keen interest in ensuring application quality and reliability through automated testing. I use tools like <span className="font-semibold">Puppeteer</span> to automate browser tasks and validate functionality, ensuring a polished final product.
-          </p>
+           
+          </p> Beyond development, I have a keen interest in ensuring application quality and reliability through automated testing, ensuring a polished final product.
         </motion.div>
         
         {/* Skills */}
